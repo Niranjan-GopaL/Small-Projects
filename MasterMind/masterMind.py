@@ -12,8 +12,6 @@ def Game():
     for i in range(3):
         code.append(colors[random.randint(0,4)])
 
-    print(code)
-
     completed = False
     for i in range(10):
 
@@ -32,17 +30,11 @@ def Game():
 
         temp = code.copy()
 
-        print(code)
-        print(guess)
-
         for posInGuess,colorInGuess in enumerate(guess):
             if colorInGuess == code[posInGuess]:
                 correctPos += 1
                 code.pop(posInGuess)
                 guess.pop(posInGuess)
-
-        print(code)
-        print(guess)
 
         for i in code:
             if i in guess:
