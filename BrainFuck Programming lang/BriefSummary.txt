@@ -1,0 +1,14 @@
+It's an Esoteric programming language ( meant to be fun and not practical)
+
+
++  - Increments the byte at the location
+-  - DEcrements the byte at the location
+> and < moves the location to left and right respectively
+[ ] are kinda like a while loop , 
+[ means if the byte is True (not zero) it'll run the code till it reaches the ] and if the byte was 0 it'll skip entire code inside
+. printf out
+, take in one byte from user
+
+You kinda need ASCII table open lol
+
+You can get a C interpreter from https://github.com/fabianishere/brainfuck/fork , It's written in C and Cmake
