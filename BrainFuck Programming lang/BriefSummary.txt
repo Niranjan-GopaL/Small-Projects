@@ -1,5 +1,5 @@
 It's an Esoteric programming language ( meant to be fun and not practical)
-
+Just 8 valid characters everything else is a comment
 
 +  - Increments the byte at the location
 -  - DEcrements the byte at the location
@@ -8,6 +8,9 @@ It's an Esoteric programming language ( meant to be fun and not practical)
 [ means if the byte is True (not zero) it'll run the code till it reaches the ] and if the byte was 0 it'll skip entire code inside
 . printf out
 , take in one byte from user
+
+
+
 
 You kinda need ASCII table open lol
 
