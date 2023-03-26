@@ -1,0 +1,12 @@
+In JavaScript, the addEventListener method is used to attach an event listener to an HTML element, 
+such as a canvas, a button, or a div. An event listener is a function that is called every time a 
+specific event occurs on the element, such as a click, a keypress, or a mouse movement.
+
+
+In this example code, we are attaching a mousemove event listener to the canvas element using the 
+addEventListener method. The mousemove event is triggered whenever the mouse cursor is moved over the element.
+
+
+The event listener function takes an event object as its parameter. The e.clientX and e.clientY 
+properties of the event object are used to get the X and Y coordinates of the mouse cursor relative 
+to the top-left corner of the canvas element.
