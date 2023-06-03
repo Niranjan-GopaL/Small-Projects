@@ -14,3 +14,36 @@ content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
 ],
+
+
+<-------------------- few not at all related stuff -------------------------------->
+
+the project was initialised with App.jsx like this {note the structure and not the body }
+
+function  App(){
+  return (
+    <>
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+    </>
+  )
+}
+
+export default App;
+
+which was annoying so I changed it to :-----------------------------
+
+export const App =  ()=> {
+  return (
+    <>
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+    </>
+  )
+}
+and made this change in main.jsx (we had to change the way we call App from main.jsx)
+
+                                import {App} from './App.jsx'
+
