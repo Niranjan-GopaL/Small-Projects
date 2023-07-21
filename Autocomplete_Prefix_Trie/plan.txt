@@ -1,0 +1,12 @@
+
+- a Tree like this :- 
+https://en.wikipedia.org/wiki/Trie
+
+
+-   We'll code it in c as Tsoding is 
+    and then port it to python
+
+
+
+
+
