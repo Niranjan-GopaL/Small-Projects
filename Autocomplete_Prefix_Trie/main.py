@@ -1,45 +1,57 @@
+cnt = 0
 class Node:
     def __init__(self):
+        self.id = self.get_id()
         self.characters = ''
         self.children = [0]*256
 
     def add(self, ch):
         self.characters += ch
 
+    def get_id(self):
+        global cnt
+        cnt += 1
+        return cnt
 
-def insert_text(root, text):
 
-    if root == None:
-        print("Error: Root is None")
+def insert_text(root: Node , text):
 
     tmp_root = root
     for ch in text:
-        # print(f"ch : {ch} and at node : {root.children[ord(ch)]}")
-        root.children[ord(ch)] = Node()
-        # print(f"NEW NODE CREATED AT: {root.children[ord(ch)]} ")
-        root.add(ch)
+
+        if root.children[ord(ch)] == 0:
+            root.children[ord(ch)] = Node()
+            root.add(ch)
+
         root = root.children[ord(ch)]
 
     return tmp_root
 
 
-def print_tree(root: Node):
-    if root == None:
-        print("Error: Root is None")
-
+def render(root: Node):
     for c in root.characters:
-        print(f"character : {c} of root : {root.characters} ")
-        print_tree(root.children[ord(c)])
+        child = root.children[ord(c)]
+        print(f"    Node{root.id} -> Node{child.id} [label=\"{c}\"];")
+        render(child) 
 
 
-# n = int(input())
-# for _ in range(n):
-#     text = input()
-#     root = insert_text(root, text)
+def echo_to_dot(root):
+    print("digraph G{")
+    render(root)
+    print("}")
 
-# text = input()
-text = 'hello'
+
+def insert_from_file(root,filename):
+    with open(filename,'r') as file:
+        lines = file.readlines()
+
+        for line in lines:
+            text = line.strip()  
+            root = insert_text(root, text)
+
+    return root
+
 
 root = Node()
-root = insert_text(root, text)
-print_tree(root)
+root = insert_from_file(root,'./inp.txt')
+echo_to_dot(root)

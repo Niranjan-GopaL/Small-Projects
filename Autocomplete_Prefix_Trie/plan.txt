@@ -1,12 +1,20 @@
-
-- a Tree like this :- 
+- a Prefix Tree like this :- 
 https://en.wikipedia.org/wiki/Trie
 
 
--   We'll code it in c as Tsoding is 
-    and then port it to python
+-   Dot and Graphviz is MIND BLOWING, we can
+    use them to visualize graphs SO FUCKING COOL 
+
+HOW TO RUN :- 
+
+0)      input ALL THE WORDS IN inp.txt that you want to autocomplete for
+1)      ./build.sh
+2)      open the svg file
 
 
+HOW IT WORKS :-
 
-
-
+1)      Python parses through the words in inp.txt and generates a trie
+2)      py code also generates a .dot file (GRAPH VISUALIZER)
+3)      inside build.sh ==> dot -Tsvg render.dot > render.svg
+4)      svg will have the diagrams
