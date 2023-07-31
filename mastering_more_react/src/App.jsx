@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import './App.css'
-import Greet from './Greet'
+import MyComponent_Greet from './Greet'
+import Welcome from './Welcome'
 
 
 class App extends Component {
@@ -8,7 +9,8 @@ class App extends Component {
   render() {
     return (
         <div >
-            <Greet name='Ninja' />
+            <MyComponent_Greet name='Ninja' />
+            <Welcome />
         </div>
     )
 
