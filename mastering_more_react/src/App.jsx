@@ -1,14 +1,34 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Component from './Props'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      
+        <Component 
+            name="Name_1" 
+            alias="ALias_1" 
+            note="YOU CAN PASS ANYTHING any no of times"
+            note2="YOU CAN PASS ANYTHING any no of times"
+        />
+
+        <Component 
+            name="Name_2" 
+            alias="ALias_2" 
+            note="YOU CAN PASS ANYTHING any no of times"
+            note2="YOU CAN PASS ANYTHING any no of times"
+        />
+
+        <Component 
+            name="Name_3" 
+            alias="ALias_4" 
+            note="YOU CAN PASS ANYTHING any no of times"
+            note2="YOU CAN PASS ANYTHING any no of times"
+        />
+
+
+
     </>
   )
 }
