@@ -9,8 +9,8 @@ class App extends Component {
   render() {
     return (
         <div >
-            <MyComponent_Greet name='Ninja' />
-            <Welcome />
+            {/* <MyComponent_Greet name='Ninja' /> */}
+            {/* <Welcome /> */}
         </div>
     )
 
