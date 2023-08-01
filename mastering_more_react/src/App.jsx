@@ -11,10 +11,12 @@ function App() {
         <UseCase>
 
             <div>
+                USEFUL FOR DYNAMICALLY RENDERING INSIDE A COMPONENT
                 <div>
+                    NO IDEA WHAT SHOULD BE RENDRED
                 </div>
             </div>
-            
+
         </UseCase>
     </>
   )
